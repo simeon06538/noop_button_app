@@ -28,9 +28,16 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('No-op Button')),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {},
-          child: const Text('Press me'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('CI build check'),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Press me'),
+            ),
+          ],
         ),
       ),
     );
